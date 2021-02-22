@@ -31,7 +31,7 @@ iii.	Location (entered as city and state)
 
 iv.	Cost of living in the location (expressed as an index)
 
-- Add 'costofLiving: int' to class 'Jobs' as an attribute.
+- Add 'costLiving: int' to class 'Jobs' as an attribute.
 
 v.	Possibility to work remotely (expressed as the number of days a week one could work remotely, between 1 and 5)
 

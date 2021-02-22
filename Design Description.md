@@ -131,8 +131,6 @@ vii.	Leave time
 
 - Use relationship 'Association' between class 'Jobs' and 'JobComparison'.
 
-- Similarly, use relationship 'Dependency' between class 'JobScore' and 'JobComparison' ('JobComparison' uses 'JobScore').
-
 d.	Be offered to perform another comparison or go back to the main menu.
 
 - Add operation 'returnMainMenu()' to class 'JobComparison'.
@@ -181,6 +179,8 @@ For example, if the weights are 2 for the yearly salary, 2 for the retirement be
 - Add operation 'getScore():int' to class 'JobScore'.
 
 - Use relationship 'Association' between class 'Jobs' and 'JobScore'.
+
+- Use relationship 'Dependency' between class 'JobScore' and 'JobComparison' ('JobComparison' uses 'JobScore').
 
 
 7.	The user interface must be intuitive and responsive.

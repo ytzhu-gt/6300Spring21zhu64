@@ -6,63 +6,63 @@ or (4) compare job offers (disabled if no job offers were entered yet ).
 
 - To realize this requirement, I added class 'System' and its three operations 'createMyCurrentJob()', 'createMyJobOffer()', and 'compareJobOffers()' to my class diagram. 
 
-- I added another class 'Jobs', which consists of current job and job offers. I added an attribute 'isCurrentJob: boolean' to distinguish current job and job offers.
+- I added another class 'Job', which consists of current job and job offers. I added an attribute 'isCurrentJob: boolean' to distinguish current job and job offers.
 
-- Use relationship 'Association' between class 'System' and 'Jobs'.
+- Use relationship 'Association' between class 'System' and 'Job'.
 
 
 2.	When choosing to enter current job details, a user will:
 
 a.	Be shown a user interface to enter (if it is the first time) or edit all of the details of their current job, which consist of:
 
-- Add 'enterJob()' and 'editJob()' to class 'Jobs' as operations.
+- Add 'enterJob()' and 'editJob()' to class 'Job' as operations.
 
 i.	Title
 
-- Add 'title: String' to class 'Jobs' as an attribute.
+- Add 'title: String' to class 'Job' as an attribute.
 
 ii.	Company
 
-- Add 'company: String' to class 'Jobs' as an attribute.
+- Add 'company: String' to class 'Job' as an attribute.
 
 iii.	Location (entered as city and state)
 
-- Add 'city: String' and 'state:String' to class 'Jobs' as an attribute.
+- Add 'city: String' and 'state:String' to class 'Job' as an attribute.
 
 iv.	Cost of living in the location (expressed as an index)
 
-- Add 'costLiving: int' to class 'Jobs' as an attribute.
+- Add 'costLiving: int' to class 'Job' as an attribute.
 
 v.	Possibility to work remotely (expressed as the number of days a week one could work remotely, between 1 and 5)
 
-- Add 'remoteWorkDay: int' to class 'Jobs' as an attribute.
+- Add 'remoteWorkDay: int' to class 'Job' as an attribute.
 
 vi.	Yearly salary
 
-- Add 'yearlySalary: int' to class 'Jobs' as an attribute.
+- Add 'yearlySalary: int' to class 'Job' as an attribute.
 
 vii.	Yearly bonus
 
-- Add 'yearlyBonus: int' to class 'Jobs' as an attribute.
+- Add 'yearlyBonus: int' to class 'Job' as an attribute.
 
 viii.	Retirement benefits (as percentage matched)
 
-- Add 'retireBenefit: double' to class 'Jobs' as an attribute.
+- Add 'retireBenefit: double' to class 'Job' as an attribute.
 
 ix.	Leave time (vacation days and holiday and/or sick leave, as a single overall number of days)
 
-- Add 'leaveTime: int' to class 'Jobs' as an attribute.
+- Add 'leaveTime: int' to class 'Job' as an attribute.
 
 b.	Be able to either save the job details or cancel and exit without saving, returning in both cases to the main menu.
 
-- Add 'saveJob()' and 'cancelJob()' to class 'Jobs' as operations.
+- Add 'saveJob()' and 'cancelJob()' to class 'Job' as operations.
 
 
 3.	When choosing to enter job offers, a user will:
 
 a.	Be shown a user interface to enter all of the details of the offer, which are the same ones listed above for the current job.
 
-- Since the attributes of job offers are the same as current job, I put them all in class 'Jobs'. I added attribute 'jobID:int' to class 'Jobs' to identity each job.
+- Since the attributes of job offers are the same as current job, I put them all in class 'Job'. I added attribute 'jobID:int' to class 'Job' to identity each job.
 
 b.	Be able to either save the job offer details or cancel.
 
@@ -70,7 +70,7 @@ b.	Be able to either save the job offer details or cancel.
 
 c.	Be able to (1) enter another offer, (2) return to the main menu, or (3) compare the offer with the current job details (if present).
 
-- Add operation 'returnMainMenu()' and 'compareCurrent()' to class 'Jobs'.
+- Add operation 'returnMainMenu()' and 'compareCurrent()' to class 'Job'.
 
 
 4.	When adjusting the comparison settings, the user can assign integer weights to:
@@ -129,7 +129,7 @@ vi.	Retirement benefits (as percentage matched)
 
 vii.	Leave time
 
-- Use relationship 'Association' between class 'Jobs' and 'JobComparison'.
+- Use relationship 'Association' between class 'Job' and 'JobComparison'.
 
 d.	Be offered to perform another comparison or go back to the main menu.
 
@@ -178,7 +178,7 @@ For example, if the weights are 2 for the yearly salary, 2 for the retirement be
 
 - Add operation 'getScore():int' to class 'JobScore'.
 
-- Use relationship 'Association' between class 'Jobs' and 'JobScore'.
+- Use relationship 'Association' between class 'Job' and 'JobScore'.
 
 - Use relationship 'Dependency' between class 'JobScore' and 'JobComparison' ('JobComparison' uses 'JobScore').
 

@@ -99,6 +99,7 @@ e.	Leave time
 
 If no weights are assigned, all factors are considered equal.
 
+- Set default value of above attributes to 1.
 
 5.	When choosing to compare job offers, a user will:
 
@@ -128,7 +129,7 @@ vi.	Retirement benefits (as percentage matched)
 
 vii.	Leave time
 
-- Use relationship 'Dependency' between class 'Jobs' and 'JobComparison' ('JobComparison' uses 'Jobs').
+- Use relationship 'Association' between class 'Jobs' and 'JobComparison'.
 
 - Similarly, use relationship 'Dependency' between class 'JobScore' and 'JobComparison' ('JobComparison' uses 'JobScore').
 

@@ -149,7 +149,7 @@ AYS = yearly salary adjusted for cost of living
 
 AYB = yearly bonus adjusted for cost of living
 
-- Add 'AYS: int' to class 'JobScore' as an attribute.
+- Add 'AYB: int' to class 'JobScore' as an attribute.
 
 RBP = retirement benefits percentage
 

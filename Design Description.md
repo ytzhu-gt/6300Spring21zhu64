@@ -185,6 +185,7 @@ For example, if the weights are 2 for the yearly salary, 2 for the retirement be
 
 7.	The user interface must be intuitive and responsive.
 
+- It is not represented in my design. It will be handled entirely within the GUI implementation.
 
 8.	For simplicity, you may assume there is a single system running the app (no communication or saving between devices is necessary)
 

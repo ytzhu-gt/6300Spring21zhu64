@@ -4,7 +4,7 @@
 (1) enter or edit current job details, (2) enter job offers, (3) adjust the comparison settings, 
 or (4) compare job offers (disabled if no job offers were entered yet ). 
 
-- To realize this requirement, I added class 'System' and its three operations 'createMyCurrentJob()', 'createMyJobOffer()', and 'compareJobOffers()' to my class diagram. 
+- To realize this requirement, I added class 'System' and its three operations 'createMyCurrentJob()', 'createMyJobOffer()', 'adjustComparison()', and 'compareJobOffers()' to my class diagram. 
 
 - I added another class 'Job', which consists of current job and job offers. I added an attribute 'isCurrentJob: boolean' to distinguish current job and job offers.
 
